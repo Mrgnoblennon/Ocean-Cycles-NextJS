@@ -6,7 +6,6 @@ export default function Home() {
     <div>
       <Slider/>
       <Testimonials/>
-          
-        </div>
+    </div>
   );
 }

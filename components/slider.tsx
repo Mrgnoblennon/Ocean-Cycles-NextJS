@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
+import { Button } from "@/components/ui/button";
 
 const variants = {
   enter: (direction: number) => ({
@@ -50,11 +51,11 @@ export const Slider: React.FC = () => {
   React.useEffect(() => {
     const imageInterval = setInterval(() => {
       setPage([page + 1, 1]);
-    }, 12000); // Image transition interval
+    }, 50000); // Image transition interval
 
     const textTimeout = setTimeout(() => {
       setTextVisible(false);
-    }, 10000); // Text fade-out before image transition
+    }, 48000); // Text fade-out before image transition
 
     return () => {
       clearInterval(imageInterval);
@@ -104,7 +105,7 @@ export const Slider: React.FC = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
-          className="absolute w-full h-full z-0"
+          className="absolute w-full h-full z-0 brightness-75"
           custom={direction}
           variants={variants}
           initial="enter"
@@ -124,22 +125,22 @@ export const Slider: React.FC = () => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center bg-black bg-opacity-50 p-4 rounded-md text-white z-10"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center w-full rounded-md text-white z-10"
           >
             <motion.div variants={childVariants}>
-              <h1 className="text-8xl mb-4 font-bold">
+              <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-4 font-bold">
                 Ocean Cycles
-              </h1>
+              </p>
             </motion.div>
             <motion.div variants={childVariants}>
-              <h2 className="text-2xl mb-[120px]">
+              <p className="text-lg md:text-lg lg:text-2xl mb-8 sm:mb-4 md:mb-8 lg:mb-12">
                 {sliderData[imageIndex].tagline}
-              </h2>
+              </p>
             </motion.div>
             <motion.div variants={childVariants}>
-              <button className="bg-teal-500 text-white py-2 px-4 rounded-md hover:bg-teal-600 transition">
+              <Button size="lg" className="py-2 px-4 rounded-md hover:bg-teal-600 transition">
                 {sliderData[imageIndex].button}
-              </button>
+              </Button>
             </motion.div>
           </motion.div>
         )}
