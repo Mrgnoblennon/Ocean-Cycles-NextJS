@@ -51,11 +51,11 @@ export const Slider: React.FC = () => {
   React.useEffect(() => {
     const imageInterval = setInterval(() => {
       setPage([page + 1, 1]);
-    }, 50000); // Image transition interval
+    }, 12000); // Image transition interval
 
     const textTimeout = setTimeout(() => {
       setTextVisible(false);
-    }, 48000); // Text fade-out before image transition
+    }, 10000); // Text fade-out before image transition
 
     return () => {
       clearInterval(imageInterval);

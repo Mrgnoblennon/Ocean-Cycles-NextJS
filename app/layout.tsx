@@ -3,6 +3,7 @@ import { Raleway } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import Script from "next/script";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
@@ -22,6 +23,17 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Script className="booqable-script">
+        {`
+          var booqableOptions = {
+            company: '6fc6610d-886e-4b27-80d8-955c3be42647'
+          };
+        `}
+        </Script>
+        <Script
+          src="https://6fc6610d-886e-4b27-80d8-955c3be42647.assets.booqable.com/v2/booqable.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

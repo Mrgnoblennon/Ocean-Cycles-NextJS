@@ -4,14 +4,14 @@ import { MapPinIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 const ContactPage: React.FC = () => {
   return (
-    <div className="bg-white text-gray-800 py-16 px-8 md:px-16 lg:px-32">
-      <div className="max-w-4xl mx-auto text-center">
+    <div className="bg-white text-gray-800 py-8 px-4 sm:py-16 sm:px-8 md:px-12 lg:px-16 xl:px-24">
+      <div className="max-w-4xl mx-auto text-center space-y-16">
 
         {/* Address Section */}
-        <section className="mb-16">
-          <Card className="bg-gray-100 p-8 rounded-lg shadow-lg text-left">
-            <CardHeader className="mb-4">
-              <CardTitle className="text-2xl font-bold flex items-center justify-center space-x-2">
+        <section>
+          <Card className="bg-gray-100 p-6 sm:p-8 rounded-lg shadow-lg text-left space-y-4">
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl font-bold flex items-center justify-center space-x-2">
                 <MapPinIcon className="h-6 w-6 text-blue-600" />
                 <span>Our Address</span>
               </CardTitle>
@@ -37,9 +37,9 @@ const ContactPage: React.FC = () => {
 
         {/* Contact Information Section */}
         <section>
-          <Card className="bg-gray-100 p-8 rounded-lg shadow-lg text-left">
-            <CardHeader className="mb-4">
-              <CardTitle className="text-2xl font-bold flex items-center justify-center space-x-2">
+          <Card className="bg-gray-100 p-6 sm:p-8 rounded-lg shadow-lg text-left space-y-4">
+            <CardHeader>
+              <CardTitle className="text-xl sm:text-2xl font-bold flex items-center justify-center space-x-2">
                 <PhoneIcon className="h-6 w-6 text-blue-600" />
                 <span>Contact Us</span>
               </CardTitle>
