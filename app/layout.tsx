@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-        <Script className="booqable-script">
+        <Script id="booqable-script">
         {`
           var booqableOptions = {
             company: '6fc6610d-886e-4b27-80d8-955c3be42647'
