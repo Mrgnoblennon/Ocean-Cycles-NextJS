@@ -11,13 +11,13 @@ const EbikesPage = () => {
           {eBikes.map((bike) => (
             <Card key={bike.id} className="bg-white shadow-lg rounded-lg">
               <CardHeader>
-                <Image
+                {/*<Image
                   src={bike.imageUrl}
                   alt={bike.name}
                   width={500}
                   height={500}
                   className="w-full h-48 object-cover rounded-t-md"
-                />
+                />*/}
                 <CardTitle className="text-2xl font-bold mt-4">{bike.name}</CardTitle>
               </CardHeader>
               <CardContent>
