@@ -20,7 +20,7 @@ const AboutPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">E-Bike Rentals</CardTitle>
               </CardHeader>
@@ -28,7 +28,7 @@ const AboutPage = () => {
                 <p>Explore Beach City on our top-of-the-line e-bikes. We offer flexible rental options to suit your needs, from hourly to daily rates.</p>
               </CardContent>
             </Card>
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Guided Tours</CardTitle>
               </CardHeader>
@@ -36,7 +36,7 @@ const AboutPage = () => {
                 <p>Join one of our guided tours to experience the best routes and hidden gems of the coastline, led by our expert guides.</p>
               </CardContent>
             </Card>
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Maintenance & Repairs</CardTitle>
               </CardHeader>
@@ -54,9 +54,9 @@ const AboutPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Meet the Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
-                {/*<Image src="/images/team-member-1.jpg" alt="John Doe" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" />*/}
+                <Image src="/person1.png" alt="John Doe" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" />
                 <CardTitle className="text-2xl font-bold">John Doe</CardTitle>
               </CardHeader>
               <CardContent>
@@ -64,9 +64,9 @@ const AboutPage = () => {
                 <p>With a passion for sustainable transport, John started Ocean Cycles to bring the joy of e-biking to the community.</p>
               </CardContent>
             </Card>
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
-                {/*<Image src="/images/team-member-2.jpg" alt="Jane Smith" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" />*/}
+                <Image src="/person2.png" alt="Jane Smith" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" />
                 <CardTitle className="text-2xl font-bold">Jane Smith</CardTitle>
               </CardHeader>
               <CardContent>
@@ -74,10 +74,10 @@ const AboutPage = () => {
                 <p>Jane is our go-to expert for all things mechanical, ensuring every bike is in perfect condition for your ride.</p>
               </CardContent>
             </Card>
-            <Card className="bg-white shadow-lg rounded-lg">
+            <Card className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
-                {/* <Image src="/images/team-member-3.jpg" alt="Carlos Hernandez" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" /> */}
-                <CardTitle className="text-2xl font-bold">Carlos Hernandez</CardTitle>
+                <Image src="/person3.png" alt="Carlos Hernandez" width={500} height={500} className="w-full h-48 object-cover rounded-md mb-4" />
+                <CardTitle className="text-2xl font-bold">Carlita Hernandez</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm font-medium text-gray-600">Tour Guide</p>

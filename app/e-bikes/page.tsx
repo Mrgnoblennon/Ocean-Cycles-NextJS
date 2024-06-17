@@ -9,15 +9,15 @@ const EbikesPage = () => {
         <h1 className="text-4xl md:text-5xl font-semibold mb-12">Our E-Bikes</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {eBikes.map((bike) => (
-            <Card key={bike.id} className="bg-white shadow-lg rounded-lg">
+            <Card key={bike.id} className="bg-white shadow-lg rounded-lg transform transition-transform duration-200 hover:scale-105">
               <CardHeader>
-                {/*<Image
+                <Image
                   src={bike.imageUrl}
                   alt={bike.name}
                   width={500}
                   height={500}
                   className="w-full h-48 object-cover rounded-t-md"
-                />*/}
+                />
                 <CardTitle className="text-2xl font-bold mt-4">{bike.name}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -28,11 +28,7 @@ const EbikesPage = () => {
                   <li><strong>Motor:</strong> {bike.specs.motor}</li>
                 </ul>
               </CardContent>
-              <CardFooter>
-                <a href={`/ebikes/${bike.id}`} className="text-blue-600 hover:text-blue-800 font-medium">
-                  Learn More
-                </a>
-              </CardFooter>
+              
             </Card>
           ))}
         </div>

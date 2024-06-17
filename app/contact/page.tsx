@@ -17,19 +17,20 @@ const ContactPage: React.FC = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p>123 Coastal Road, Beach City</p>
+              <p>2 Phillimore St, Fremantle WA 6160.</p>
               <div className="mt-4">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.023096256036!2d-122.40759448467365!3d37.7795744797571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c3dd0e839%3A0x7bb8b841d1f7d5d1!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1594243423000!5m2!1sen!2sin"
-                  width="100%"
-                  height="300"
-                  frameBorder="0"
-                  allowFullScreen={false}
-                  aria-hidden="false"
-                  tabIndex={0}
-                  className="rounded-lg"
-                  title="Our Location"
-                ></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3407.560273417237!2d115.74201196943326!3d-32.0547766771309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a327ec7613e7717%3A0x2b3f9b1d0eb46982!2sCoordinates%3A%20-32.0547767%2C%20115.7420119!5e0!3m2!1sen!2sin!4v1686314243423!5m2!1sen!2sin"
+                width="100%"
+                height="500"
+                frameBorder="0"
+                allowFullScreen={false}
+                aria-hidden="false"
+                tabIndex={0}
+                className="rounded-lg"
+                title="Our Location"
+              ></iframe>
+
               </div>
             </CardContent>
           </Card>
@@ -46,7 +47,7 @@ const ContactPage: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                <strong>Phone:</strong> <a href="tel:+1234567890" className="text-blue-600 hover:text-blue-800">+1 (234) 567-890</a>
+                <strong>Phone:</strong> <a href="tel:+61492911242" className="text-blue-600 hover:text-blue-800">0492 911 242</a>
               </p>
               <a href="mailto:contact@oceancycles.com">
                 <Button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200">

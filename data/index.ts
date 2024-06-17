@@ -41,7 +41,7 @@ export const eBikes = [
     id: 1,
     name: "Beach Cruiser",
     description: "Perfect for a relaxing ride along the coast with its comfortable seating and smooth handling.",
-    imageUrl: "/images/ebike-1.jpg",
+    imageUrl: "/ebike1.png",
     specs: {
       range: "50 miles",
       battery: "500Wh",
@@ -52,7 +52,7 @@ export const eBikes = [
     id: 2,
     name: "Mountain Explorer",
     description: "Ideal for off-road adventures with a powerful motor and robust suspension system.",
-    imageUrl: "/images/ebike-2.jpg",
+    imageUrl: "/ebike2.png",
     specs: {
       range: "70 miles",
       battery: "600Wh",
@@ -63,7 +63,7 @@ export const eBikes = [
     id: 3,
     name: "City Commuter",
     description: "A great choice for daily commutes with its lightweight frame and high-efficiency motor.",
-    imageUrl: "/images/ebike-3.jpg",
+    imageUrl: "/ebike3.png",
     specs: {
       range: "40 miles",
       battery: "400Wh",

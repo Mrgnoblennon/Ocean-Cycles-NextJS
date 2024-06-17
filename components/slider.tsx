@@ -138,7 +138,7 @@ export const Slider: React.FC = () => {
               </p>
             </motion.div>
             <motion.div variants={childVariants}>
-              <Button size="lg" className="py-2 px-4 rounded-md hover:bg-teal-600 transition">
+              <Button size="lg" variant="gradient" className="py-2 px-4">
                 {sliderData[imageIndex].button}
               </Button>
             </motion.div>
