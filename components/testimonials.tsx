@@ -7,7 +7,7 @@ const Testimonials = () => {
     <section className="py-20 mt-[200px]">
       <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-center">
         Words from our
-        <span className="text-emerald-400"> satisfied clients</span>
+        <span className="text-emerald-400"> satisfied customers</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
